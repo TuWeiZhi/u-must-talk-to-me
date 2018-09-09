@@ -14,7 +14,6 @@ def hit_me():
         tk.Label(root1, text='          ').grid(row=i, column=1)
     tk.Button(root1, text='后悔了!', fg='black', command = root1.destroy, width = 10, height = 2).grid(row = 2, column = 2)
 
-
 root = tk.Tk()
 # top = tk.Toplevel(root)
 # w = root.winfo_screenwidth()
