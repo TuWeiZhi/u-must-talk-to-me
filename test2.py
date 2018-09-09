@@ -3,11 +3,8 @@ import tkinter.messagebox
 
 def close_window():
     tkinter.messagebox.showwarning('WARNING', 'NO CLOSE')
-# def size_window():
-#     tkinter.messagebox.showwarning('WARNING', 'NO CHANGE')
 def hit_me():
 
-    # tkinter.messagebox.showwarning('nonono', 'back')
     root1 = tk.Tk()
     root1.title('不同意不行！')
     root1.geometry('250x150')
@@ -32,19 +29,10 @@ for i in range(50):
 photo = tk.PhotoImage(file="1.png")
 imgLabel = tk.Label(root,image=photo)
 imgLabel.grid(row = 1, column = 3)
-tk.Label(root, text = ( '！！'), width = 30, height = 10, fg = 'red', font =('宋体', 20, 'normal')).grid(row = 2, column = 4)
-#请....请做我女朋友吧
-# tk.Label(root, text = '  ').grid(row = 1, column = 1)
-# tk.Label(root, text = '  ').grid(row = 1, column = 0)
-# tk.Label(root, text = '  ').grid(row = 2, column = 1)
-# tk.Label(root, text = '  ').grid(row = 2, column = 0)
+tk.Label(root, text = ( '请....请做我女朋友吧！！'), width = 30, height = 10, fg = 'red', font =('宋体', 20, 'normal')).grid(row = 2, column = 4)
 tk.Button(root, text = '不同意', fg = 'black', command = hit_me, width = 15, height = 2).grid(row = 3, column = 5)
 tk.Button(root, text = '同意', fg = 'black', command = root.destroy, width = 15, height = 2).grid(row = 3, column = 4)
 root.protocol('WM_DELETE_WINDOW', close_window)
 # root.protocol('WM_SIZE_WINDOW', size_window)
-
-
-
-
 
 root.mainloop()
